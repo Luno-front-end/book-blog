@@ -1,0 +1,19 @@
+footer {
+  .container {
+    display: flex;
+    margin-top: 50px;
+  }
+}
+.section-author {
+  display: flex;
+
+  max-width: 700px;
+
+  .photo-author {
+  }
+  .info-author {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  border-right: 1px solid black;
+}
