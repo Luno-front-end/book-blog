@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <!-- Header Wrapper -->
-
     <!-- Header -->
-    <header class="head">
+    <header class="head" id="head">
       <div class="container">
         <div class="navigation">
           <!-- Logo -->
@@ -28,28 +26,30 @@
                 <a class="general-a link-nav" href="index.html">Home</a>
               </li>
               <li class="list-nav">
-                <a class="general-a link-nav" href="#"> About the author</a>
+                <a class="general-a link-nav" id="author-scroll" href=""
+                  >About author</a
+                >
               </li>
               <li class="list-nav">
-                <a class="general-a link-nav" href="#">Сontacts</a>
+                <a class="general-a link-nav" id="contacts-scroll" href=""
+                  >Сontacts</a
+                >
               </li>
             </ul>
           </nav>
         </div>
 
-        <div>
-          <h1>
+        <div class="container-title">
+          <h1 class="hero-title">
             <span class="EX">Exciting</span> <span class="RE">reading</span>
           </h1>
-          <p>Read only selected, interesting and best..</p>
-          <!-- <a href="" id="btnScroll" class="general-a btn">GO!</a> -->
+          <p class="hero-paragraph">
+            Read only selected, interesting and best.
+          </p>
           <button id="btnScroll" class="btn" type="button">GO!</button>
         </div>
       </div>
     </header>
-
-    <!-- Banner
-
 
     <!-- Main Wrapper -->
     <main id="section-book">
@@ -80,7 +80,7 @@
                 иностранные книги, книги с дарственными надписями и пометами
                 авторов.
               </p>
-              <a href=""> more details</a>
+              <a class="general-a more-details" href="#"> more details</a>
             </div>
           </article>
           <article class="card">
@@ -108,7 +108,7 @@
                 в библиотеке Пушкинского Дома) или указание на ее
                 местонахождение в другом государственном или личном собрании.
               </p>
-              <a href=""> more details</a>
+              <a class="general-a more-details" href="#"> more details</a>
             </div>
           </article>
           <article class="card">
@@ -136,14 +136,14 @@
                 в библиотеке Пушкинского Дома) или указание на ее
                 местонахождение в другом государственном или личном собрании.
               </p>
-              <a href=""> more details</a>
+              <a class="general-a more-details" href="#"> more details</a>
             </div>
           </article>
         </section>
 
         <div>
           <section class="news-section">
-            <h2 class="head-book">News</h2>
+            <h2 class="head-news">Recent news</h2>
             <ul class="general-ul">
               <li class="list-news">
                 <a class="link-news" target="_blank" href="#"
@@ -191,32 +191,40 @@
           </section>
 
           <section class="comments-section">
-            <h2>Comments</h2>
-            <ul>
+            <h2 class="head-news">Last comments</h2>
+            <ul class="general-ul">
               <li>
-                <article class="card">
-                  <p>
+                <article>
+                  <h3 class="name-author">
+                    <a class="general-a author-link" href="">Name Author</a>
+                  </h3>
+                  <p class="comment">
                     Donec ipsum risus, luctus quis aliquet tempus condimentum
                   </p>
-                  <!-- <span>15 minutes ago</span> -->
+                  <p class="date">15 minutes ago</p>
                 </article>
               </li>
               <li>
                 <article>
-                  <p>
-                    <a href="#">@untitled</a> Sed gravida scele risque tempus
-                    sed venenatis vitae ac est in posuere tempus.
+                  <h3 class="name-author">
+                    <a class="general-a author-link" href="">Name Author</a>
+                  </h3>
+                  <p class="comment">
+                    Sed gravida scele risque tempus sed venenatis vitae ac est
+                    in posuere tempus.
                   </p>
-                  <span>2 hours ago</span>
+                  <p class="date">2 hours ago</p>
                 </article>
               </li>
               <li>
                 <article>
-                  <p>
-                    Tempus sed tellus noenenatis vitae ac est
-                    <a href="#">@untitled</a> tempus.
+                  <h3 class="name-author">
+                    <a class="general-a author-link" href="">Name Author</a>
+                  </h3>
+                  <p class="comment">
+                    Tempus sed tellus noenenatis vitae ac est tempus.
                   </p>
-                  <span>4 hours ago</span>
+                  <p class="date">4 hours ago</p>
                 </article>
               </li>
             </ul>
@@ -225,80 +233,83 @@
       </div>
     </main>
 
-    <!-- Footer Wrapper -->
-
     <!-- Footer -->
     <footer>
       <div class="container">
-        <section class="section-author">
-          <div class="photo-author">
-            <h2>Author</h2>
-
+        <section class="section-author" id="author">
+          <div class="photo-author-container">
+            <h2 class="blog-creator-title">Author</h2>
+          </div>
+          <div class="info-author">
             <img
               src="./images/unnamed.jpg"
               alt="Author"
               width="150"
               height="150"
             />
-          </div>
-          <div class="info-author">
-            <h3>Name Name Name</h3>
-            <p>
-              Donec ornare, sem non congue cursus, neque sapien rutrum arcu, sit
-              amet gravida sapien lectus molestie ante. Nam ut purus urna, in
-              lacinia purus. Donec ornare, sem non congue cursus, neque sapien
-              rutrum arcu, sit amet gravida sapien lectus tempus ante. Nam ut
-              purus urna, in lacinia purus Nulla sed dictum neque pulvinar
-              vehicula, orci tellus ornare sapien, a fermentum libero turpis a
-              tortor. Vestibulum ac leo eu sem dolore et sed pharetra urna id
-              mi. Donec ornare, sem non congue cursus, neque sapien rutrum arcu,
-              sit amet gravida sapien lectus tempus ante. Nam ut purus urna, in
-              lacinia purus.
-            </p>
-          </div>
 
-          <!-- <a href="#">Full Company Bio</a> -->
+            <div class="about-author">
+              <h3 class="full-name">Name Name Name</h3>
+              <p>
+                Donec ornare, sem non congue cursus, neque sapien rutrum arcu,
+                sit amet gravida sapien lectus molestie ante. Nam ut purus urna,
+                in lacinia purus. Donec ornare, sem non congue cursus, neque
+                sapien rutrum arcu, sit amet gravida sapien lectus tempus ante.
+                Nam ut purus urna, in lacinia purus Nulla sed dictum neque
+                pulvinar vehicula, orci tellus ornare sapien, a fermentum libero
+                turpis a tortor. Vestibulum ac leo eu sem dolore et sed pharetra
+                urna id mi. Donec ornare, sem non congue cursus, neque sapien
+                rutrum arcu, sit amet gravida sapien lectus tempus ante. Nam ut
+                purus urna, in lacinia purus.
+              </p>
+            </div>
+          </div>
         </section>
 
-        <div>
+        <div class="container-contact">
           <section>
-            <h2>Tempus lorem</h2>
-            <ul>
-              <li>
-                <a href="#">Donec vestibulum sed viverra</a>
-              </li>
-              <li>
-                <a href="#">Suspendisse sagittis varius</a>
-              </li>
-              <li>
-                <a href="#">Integer et amet urna euismod</a>
-              </li>
-              <li>
-                <a href="#">Feugiat consequat sed ipsum</a>
-              </li>
-            </ul>
+            <button type="button" id="pop-up" class="feedback">
+              Feedback <span class="smile">:)</span>
+            </button>
           </section>
 
-          <section>
+          <section id="contacts" class="section-contacts">
             <h2>Contact us</h2>
-            <ul>
+            <ul class="general-ul">
               <li>
                 1234 Somewhere Blvd #543<br />
                 Nashville, TN 00000-0000
               </li>
               <li>(800) 555-0000</li>
-              <li>
-                <a href="#">information@untitled.tld</a>
+            </ul>
+            <ul class="general-ul container-link">
+              <li class="social-list">
+                <a class="link-twitter" href="#">
+                  <svg class="twitter">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="#">@untitled</a>
+              <li class="social-list">
+                <a class="link-facebook" href="#">
+                  <svg class="facebook">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list">
+                <a class="link-instagram" href="#">
+                  <svg class="instagram">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </section>
         </div>
       </div>
     </footer>
-
+    <button type="button" class="btn-up" id="goTop">Up</button>
     <!-- Copyright -->
     <!-- <div class="copyright">&copy; Untitled. All rights reserved.</div> -->
   </body>

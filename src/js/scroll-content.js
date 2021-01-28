@@ -5,6 +5,5 @@ const sectionEl = document.getElementById('section-book');
 btnEl.addEventListener('click', scrollFn);
 
 function scrollFn(e) {
-  console.log(e.currentTarget);
   animateScrollTo(sectionEl);
 }

@@ -1,5 +1,12 @@
 body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: rgb(221, 220, 220);
+  background-image: url(https://cdn.pixabay.com/photo/2016/04/30/13/12/sutterlin-1362879_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  // background: linear-gradient(135deg, #ffffff, #000000);
 }
 .container {
   margin-left: auto;

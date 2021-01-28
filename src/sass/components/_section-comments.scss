@@ -1,3 +1,25 @@
 .comments-section {
-  width: 200px;
+  width: 300px;
+
+  background-color: #2196f3;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.name-author {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.author-link {
+  color: black;
+}
+.comment {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
+.date {
+  margin-top: 0;
+  margin-bottom: 15px;
 }

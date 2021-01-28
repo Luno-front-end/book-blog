@@ -1,19 +1,78 @@
 footer {
   .container {
     display: flex;
-    margin-top: 50px;
   }
 }
-.section-author {
+.container-contact {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  max-width: 700px;
+  min-width: 400px;
 
-  .photo-author {
-  }
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.61);
+}
+.blog-creator-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.full-name {
+  margin-top: 0;
+}
+.section-author {
+  min-width: 600px;
+  padding: 30px;
+  margin-right: 20px;
+
+  background-color: rgba(255, 255, 255, 0.61);
+
+  // .photo-author-container {
+  // }
   .info-author {
-    margin-left: 30px;
-    margin-right: 30px;
+    display: flex;
   }
-  border-right: 1px solid black;
+}
+.about-author {
+  margin-left: 30px;
+}
+// .section-contacts {
+// }
+
+.feedback {
+  min-width: 200px;
+  height: 40px;
+
+  font-size: 20px;
+
+  color: rgb(70, 70, 70);
+  background-color: #ebebeb;
+
+  border: 2px solid #2196f3;
+  border-radius: 50px;
+
+  transition: color 350ms linear, background-color 350ms linear;
+  outline: none;
+
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    background-color: #3d3d3d;
+
+    transition: color 350ms linear, background-color 350ms linear;
+  }
+
+  &:focus {
+    color: white;
+    background-color: #3d3d3d;
+
+    transition: color 350ms linear, background-color 350ms linear;
+  }
+  .smile {
+    color: #ebebeb;
+  }
 }
